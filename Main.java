@@ -189,37 +189,37 @@ O algoritmo deve calcular e exibir o valor final do produto já com o desconto a
 */
 
 
-// import java.util.Scanner; // Importa a classe Scanner para ler entrada do console
+import java.util.Scanner; // Importa a classe Scanner para ler entrada do console
 
-// public class Main {
-//      public static void main(String[] args) {
+public class Main {
+     public static void main(String[] args) {
 
-//         // Declaração das variáveis
-//         double nota1;
-//         double nota2;
-//         double notaTrabalho;
-//         double media;
+        // Declaração das variáveis
+        double nota1;
+        double nota2;
+        double notaTrabalho;
+        double media;
 
-//         // Solicitação e leitura das notas do aluno (Entrada)
-//         Scanner reader = new Scanner(System.in);
-//         System.out.print("Digite a nota da primeira prova: ");
-//         nota1 = reader.nextDouble();
+        // Solicitação e leitura das notas do aluno (Entrada)
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Digite a nota da primeira prova: ");
+        nota1 = reader.nextDouble();
 
-//         System.out.print("Digite a nota da segunda prova: ");
-//         nota2 = reader.nextDouble();
+        System.out.print("Digite a nota da segunda prova: ");
+        nota2 = reader.nextDouble();
 
-//         System.out.print("Digite a nota do trabalho: ");
-//         notaTrabalho = reader.nextDouble();
+        System.out.print("Digite a nota do trabalho: ");
+        notaTrabalho = reader.nextDouble();
 
-//         // Cálculo da média ponderada
-//         media = (nota1*0.3) + (nota2*0.5) + (notaTrabalho*0.2);
+        // Cálculo da média ponderada
+        media = (nota1*0.3) + (nota2*0.5) + (notaTrabalho*0.2);
 
-//         // Exibição do resultado (Saída)
-//         System.out.println("\nMédia final: "+media);
-//         if (media >= 7.0){
-//             System.out.println("APROVADO!");
-//         }else{
-//             System.out.println("REPROVADO!");
-//         }
-//      }
-// }
+        // Exibição do resultado (Saída)
+        System.out.println("\nMédia final: "+media);
+        if (media >= 7.0){
+            System.out.println("APROVADO!");
+        }else{
+            System.out.println("REPROVADO!");
+        }
+     }
+}
