@@ -191,7 +191,7 @@ O algoritmo deve calcular e exibir o valor final do produto já com o desconto a
 
 import java.util.Scanner; // Importa a classe Scanner para ler entrada do console
 
-public class Main {
+public class Test {
      public static void main(String[] args) {
 
         // Declaração das variáveis
