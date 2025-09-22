@@ -60,15 +60,4 @@ public class Usuario {
     public void adicionarSerie(Serie serie) {
         this.minhaListaDeSeries.add(serie);
     }
-
-    @Override
-    public String toString() {
-        return "Usuario{" +
-               "id='" + id + '\'' +
-               ", nome='" + nome + '\'' +
-               ", email='" + email + '\'' +
-               ", minhaListaDeFilmes=" + minhaListaDeFilmes.size() + " filmes" +
-               ", minhaListaDeSeries=" + minhaListaDeSeries.size() + " series" +
-               '}';
-    }
 }

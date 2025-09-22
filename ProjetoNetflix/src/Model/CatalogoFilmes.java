@@ -3,44 +3,24 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CatalogoFilmes implements CatalogoFilmesMBean {
+public class CatalogoFilmes {
+
     private List<Filme> filmes = new ArrayList<>();
 
+    // Construtor com alguns dados iniciais
     public CatalogoFilmes() {
-        // Exemplo de filmes iniciais
-        filmes.add(new Filme("1", "O Poderoso Chefão", 1972, "Drama", 175, 9.2));
-        filmes.add(new Filme("2", "A Origem", 2010, "Ficção Científica", 148, 8.8));
+        filmes.add(new Filme("F001", "O Poderoso Chefão", 1972, "Drama", 175, 9.2));
+        filmes.add(new Filme("F002", "A Origem", 2010, "Ficção Científica", 148, 8.8));
+        filmes.add(new Filme("F003", "Jurassic Park", 1993, "Aventura", 127, 8.2));
     }
 
-    @Override
-    public int getNumeroTotalDeFilmes() {
-        return filmes.size();
-    }
-
-    @Override
-    public String getFilmeMaisBemAvaliado() {
-        if (filmes.isEmpty()) {
-            return "Nenhum filme no catálogo.";
-        }
-        Filme melhorFilme = filmes.get(0);
-        for (Filme f : filmes) {
-            if (f.getAvaliacao() > melhorFilme.getAvaliacao()) {
-                melhorFilme = f;
-            }
-        }
-        return melhorFilme.getTitulo() + " (Avaliação: " + melhorFilme.getAvaliacao() + ")";
-    }
-
-    @Override
-    public void adicionarNovoFilme(String titulo, int ano) {
-        // Lógica simples para adicionar um filme
-        String novoId = "f" + (filmes.size() + 1);
-        filmes.add(new Filme(novoId, titulo, ano, "N/A", 0, 0.0));
-        System.out.println("Filme '" + titulo + "' adicionado ao catálogo.");
-    }
-    
-    // Método para recuperar a lista de filmes (não faz parte do MBean)
+    // Getter para a lista de filmes
     public List<Filme> getFilmes() {
         return filmes;
+    }
+
+    // Setter para a lista de filmes
+    public void setFilmes(List<Filme> filmes) {
+        this.filmes = filmes;
     }
 }

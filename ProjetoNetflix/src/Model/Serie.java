@@ -66,16 +66,4 @@ public class Serie {
     public void setAvaliacao(double avaliacao) {
         this.avaliacao = avaliacao;
     }
-
-    @Override
-    public String toString() {
-        return "Serie{" +
-               "id='" + id + '\'' +
-               ", titulo='" + titulo + '\'' +
-               ", anoLancamento=" + anoLancamento +
-               ", genero='" + genero + '\'' +
-               ", numeroTemporadas=" + numeroTemporadas +
-               ", avaliacao=" + avaliacao +
-               '}';
-    }
 }

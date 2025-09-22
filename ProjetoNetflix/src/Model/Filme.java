@@ -66,16 +66,4 @@ public class Filme {
     public void setAvaliacao(double avaliacao) {
         this.avaliacao = avaliacao;
     }
-
-    @Override
-    public String toString() {
-        return "Filme{" +
-               "id='" + id + '\'' +
-               ", titulo='" + titulo + '\'' +
-               ", anoLancamento=" + anoLancamento +
-               ", genero='" + genero + '\'' +
-               ", duracaoEmMinutos=" + duracaoEmMinutos +
-               ", avaliacao=" + avaliacao +
-               '}';
-    }
 }
